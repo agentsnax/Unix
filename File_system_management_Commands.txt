@@ -1,0 +1,83 @@
+Step 1: Navigation and Directory Management 
+1. pwd (Print Working Directory):Displays the current directory path. 
+pwd 
+
+2. ls (List Files and Directories):Lists all files and directories in the current directory. 
+ls
+ 
+3. mkdir (Make Directory): Creates a new directory. 
+mkdir SEIT 
+
+4. cd (Change Directory): Changes the working directory to the specified path. 
+cd SEIT
+ 
+5. rmdir (Remove Directory): Removes an empty directory. 
+rmdir SEIT 
+
+6. rm (Remove Files and Directories): Removes a file or directory. Use -r for recursive deletion. 
+rm test.txt 
+rm -r directory_name
+ 
+************************************
+Step 2: File Operations 
+1. cat : create new file 
+cat > test.txt 
+Hello, this is a test file created with cat. 
+This file contains some text. 
+After entering the text, press Ctrl + D to save and exit. The content will be stored in test.txt. 
+
+2. cat (Concatenate and View File Contents): Displays the content of a file. 
+cat test.txt 
+
+3. cp (Copy Files or Directories): Copies a file or directory. 
+cp source.txt destination.txt (e.g cp text.txt myfile.txt) 
+cp -r source_directory destination_directory 
+
+4. mv (Move or Rename Files/Directories): Moves or renames a file or directory. 
+mv test.txt mytest.txt
+
+5. chmod (Change File Permissions): Modifies file permissions (e.g., read, write, execute). 
+chmod 755 mytest.txt 
+chmod u+x script.sh # Adds execute permission for the user 
+
+6. wc (Word Count): Counts the number of lines, words, and characters in a file. 
+wc mytest.txt 
+wc -l mytest.txt # Counts lines only 
+
+7. split: The split command in Unix/Linux is used to split a large file into smaller parts. It can split a file based on the number of lines or bytes 
+split [options] [input_file] [prefix] 
+split -l 1000 largefile.txt part_ 
+
+*****************************************
+Step 3: Text Processing and Piping 
+1. echo (Print Text to the Terminal):Prints a string or variable to the screen. 
+echo "Hello, world!"
+ 
+2. tr (Translate or Delete Characters): Translates characters from one set to another. 
+echo "hello" | tr 'a-z' 'A-Z' # Converts lowercase to uppercase 
+
+3. Piping (|) and Redirection (>, >>, <): Use | to pipe the output of one command to another, and >/>> to redirect output to a file. 
+ls | grep "text" # Pipe output of `ls` to `grep` to search for "text"
+echo "Hello World" > hello.txt # Redirect output to a file 
+cat file.txt >> append.txt # Append content to a file 
+
+4. grep (Search for Patterns in Files): Searches for a specific pattern in a file. 
+grep "hello" file.txt 
+grep -i "hello" file.txt # Case-insensitive search 
+
+5. sort (Sort Lines in a File): Sorts the content of a file or input stream. 
+sort myfile.txt 
+6. head (View First N Lines of a File): Displays the first few lines of a file. 
+head -n 5 myfile.txt # Shows the first 5 lines
+ 
+7. tail (View Last N Lines of a File): Displays the last few lines of a file. 
+tail -n 5 file.txt # Shows the last 5 lines 
+
+8. diff (Compare Files Line by Line): Compares two files and displays the differences. 
+diff file1.txt file2.txt
+ 
+9. comm (Compare Two Sorted Files): Compares two sorted files and displays unique and common lines.
+comm file1.txt file2.txt 
+
+10. more (View File Content): Views the content of a file one screen at a time. 
+more file.txt
