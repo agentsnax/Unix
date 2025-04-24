@@ -1,0 +1,33 @@
+1. echo "Hello,World"
+
+2.clear
+
+3.exit
+
+4.date (displays the current date and time in default format)
+
+5.time (measures the execution time of command)
+
+6.uptime (showshow long the system has been running,the number of users, and load averages)
+
+7.cal (displays calender)
+
+8.cat (concatenates and displays the contents of a file)
+
+9.tty (displays the file name of the terminal connected to the user)
+
+10.man ls  (Displays the manual pages for a command.)
+
+11.which ls  ( Displays the path of a command or program executable.)
+
+12. history  (Displays the command history of the terminal session.)
+
+13. id  (Displays user ID (UID), group ID (GID), and group memberships.)
+
+14. pwd (Prints the current working directory.)
+
+15. whoami  (Displays the username of the current user.)
+
+16.  ping google.com (Tests network connectivity to a specified host or IP address.)
+
+17. ifconfig  (Displays and configures network interfaces.)
